@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernu Veikals</title>
+    <!--	Owl Carousel CSS-file from CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Pacifico&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ваші уподобання <img src="assets/images/header/heart-activ.png"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="wrap__heart-menu">
+
+                        <div class="card__info">
+                            <div class="wrap__card-info">
+                                <img src="assets/images/my_products_carousel/3.png" alt="">
+                                <div class="wrap__info">
+                                    <div class="wrap__name-price">
+                                        <span>Шезлонг дитячий</span>
+                                        <span>1000 €</span>
+                                    </div>
+                                    <div class="info-heart">
+                                        <span> ♥Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                                    </div>
+                                    <div class="wrap__buy">
+                                        <div class="quantity">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="buy">
+                                            <span>В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="wrap__card-info">
+                                <img src="assets/images/my_products_carousel/2.png" alt="">
+                                <div class="wrap__info">
+                                    <div class="wrap__name-price">
+                                        <span>Шезлонг дитячий</span>
+                                        <span>1000 €</span>
+                                    </div>
+                                    <div class="info-heart">
+                                        <span> ♥Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                                    </div>
+                                    <div class="wrap__buy">
+                                        <div class="quantity">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="buy">
+                                            <span>В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="wrap__card-info">
+                                <img src="assets/images/my_products_carousel/1.png" alt="">
+                                <div class="wrap__info">
+                                    <div class="wrap__name-price">
+                                        <span>Шезлонг дитячий</span>
+                                        <span>1000 €</span>
+                                    </div>
+                                    <div class="info-heart">
+                                        <span> ♥Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
+                                    </div>
+                                    <div class="wrap__buy">
+                                        <div class="quantity">
+                                            <span>1</span>
+                                        </div>
+                                        <div class="buy">
+                                            <span>В корзину</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Зберегти зміни</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /.modal -->
+    <header>
+        <div class="header__top">
+            <div class="container">
+                <div class="header__nav-top row">
+                    <div class="header__logo col-2">
+                        <a href="">
+                            <img src="assets/images/header/header_logo.png" alt="Логотип">
+                        </a>
+                    </div>
+                    <div class="header__nav row col-5">
+                        <nav id="nav__top">
+                            <ul>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Оплата та доставка</a></li>
+                                <li><a href="#">Відгуки</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Контакти</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__nav-info row col">
+                        <div class="header__contact col-5">
+
+                            <a class="tel" href="tel:0989919716">
+                                <i class="bi bi-telephone-fill"></i>
+                                +38 098 991 97 16
+                            </a>
+                        </div>
+                        <div class="header__email col-5">
+                            <a class="email">
+                                <i class="bi bi-envelope-fill"></i>
+                                Kidsshop@gmail.com
+                            </a>
+                        </div>
+                        <div class="language col-2">
+                            <a href="#" class="lang lang__ua">UA</a>
+                            <a href="#" class="lang">LV</a>
+                        </div>
+                    </div>
+                </div> <!-- /.header__nav-top row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.header__top -->
+        <section class="header__inner">
+            <div class="container">
+                <div class="header__nav-inner row">
+                    <div class="nav__mega-menu col-4">
+                        <div class="dropdown">
+                            <button class="nav__btn">
+                                <div class="burger__btn loader loader--style7" title="Menu">
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         width="35px" height="35px" viewBox="0 0 30 30" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                        <rect x="0" y="0" width="25" height="4" fill="#333">
+                                            <animate attributeName="opacity" attributeType="XML"
+                                                 values="1; .2; 1"
+                                                 begin="0s" dur="0.9s" repeatCount="indefinite"
+                                            />
+                                        </rect>
+                                        <rect x="0" y="10" width="15" height="4" fill="#333">
+                                            <animate attributeName="opacity" attributeType="XML"
+                                                 values="1; .2; 1"
+                                                 begin="0.2s" dur="0.9s" repeatCount="indefinite"
+                                            />
+                                        </rect>
+                                        <rect x="0" y="20" width="25" height="4" fill="#333">
+                                            <animate attributeName="opacity" attributeType="XML"
+                                                 values="1; .2; 1"
+                                                 begin="0.4s" dur="0.9s" repeatCount="indefinite"
+                                            />
+                                        </rect>
+                                    </svg>
+                                    <div class="header__logos col">
+                                        <a href="#">
+                                            <img src="assets/images/header/header_logo.png" alt="Логотип">
+                                        </a>
+                                    </div>
+                                    <span class="category__btn">КАТАЛОГ ТОВАРІВ</span>
+                                </div>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Коляски</a>
+                                <a href="#">Автокрісла</a>
+                                <a href="#">Дитяча кімната</a>
+                                <a href="#">Транспорт та спорт</a>
+                                <a href="#">Іграшки та ігри</a>
+                                <a href="#">Дитячі подарунки</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__search topnav col-5">
+                        <div class="search-container">
+                            <form class="example" action="/action_page.php">
+                                <i class="bi bi-search"></i>
+                                <input type="text" placeholder="Введіть запрос..." name="search">
+                                <button type="submit">Знайти</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="registration__img col">
+                        <div class="registr">
+                            <div class="dropdown registr__my">
+                                <img  src="assets/images/header/registration.png">
+                                <a onclick="myFunction()" class="hidden">Особистий кабінет</a>
+                            </div>
+                            <div id="myDropdown" class="dropdown-menu">
+                    
+                                <a href="">Реєстрація</a>
+                                <a href="">Авторизація</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="heart__img col" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/images/header/heart-fr.png"></a>
+                    <div class="basket__img col"><img src="assets/images/header/basket.png"></div>
+                </div> <!-- /.header__nav-inner -->
+            </div> <!-- /.container -->
+        </section>
+    </header> <!-- /.header -->
+    <section class="intro__show-sliders">
+        <div class="container">
+            <div class="sliders row">
+                <div class="slider__show col-8">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/slider/2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/slider/1.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="intro__baners col">
+                    <div class="bnr col-4">
+                        <a href=" "><img src="assets/images/slider/banner-small-1.png" alt="Sale" title="Дивитись!"></a>
+                    </div>
+                    <div class="bnr col-4">
+                        <a href=" "><img src="assets/images/slider/banner-small-2.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- /.container -->
+    </section> <!-- /.sliders -->
+    <main>
+        <section class="carousel__photo">
+            <div class="container carousel__photo-slide row">
+                <div class="carousel__slide owl-carousel">
+                    <div class="item col">
+                        <div>
+                            <img src="assets/images/carousel/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item col">
+                        <div>
+                            <img src="assets/images/carousel/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item col">
+                        <div>
+                            <img src="assets/images/carousel/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item col">
+                        <div>
+                            <img src="assets/images/carousel/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item col">
+                        <div class="shadow-effect">
+                            <img src="assets/images/carousel/5.png" alt="">
+                        </div>
+                    </div>
+                </div> <!--/.owl-carousel-->
+            </div> <!-- /.container -->
+        </section> <!-- /.section --> <!-- /.carousel__photo -->
+        <section class="advantages-block">
+            <div class="container">
+                <div class="advantages__items row">
+                    <div class="advantages__item col-3">
+                        <div class="advantages__img">
+                            <img src="assets/images/advantages/1.png" alt="">
+                        </div>
+                        <div class="advantages__text">
+                            <span>Гарантія якості</span>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-3">
+                        <div class="advantages__img">
+                            <img src="assets/images/advantages/2.png" alt="">
+                        </div>
+                        <div class="advantages__text">
+                            <span>Широкий асортимент</span>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-3">
+                        <div class="advantages__img">
+                            <img src="assets/images/advantages/3.png" alt="">
+                        </div>
+                        <div class="advantages__text">
+                            <span>Швидка доставка</span>
+                        </div>
+                    </div>
+                    <div class="advantages__item col-3">
+                        <div class="advantages__img">
+                            <img src="assets/images/advantages/2.png" alt="">
+                        </div>
+                        <div class="advantages__text">
+                            <span>Вигідні ціни та бонуси</span>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section> <!-- /.section --> <!-- /.advantages-block -->
+        <section class="categories__assortment">
+            <div class="container">
+                <div class="categories__block">
+                    <div class="categories__block-title">
+                        <h2>Широкий асортимент товарів</h2>
+                        <h5>для мам та малечі</h5>
+                    </div>
+                    <div class="categories__block-items">
+                        <div class="categories__items row">
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/1.png">
+                                    <div class="assortment__title">
+                                        <a href="">Коляски</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/2.png">
+                                    <div class="assortment__title">
+                                        <a href="">Автокрісла</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/3.png">
+                                    <div class="assortment__title">
+                                        <a href="">Дитяча кімната</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/4.png">
+                                    <div class="assortment__title">
+                                        <a href="">Транспорт</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/5.png">
+                                    <div class="assortment__title">
+                                        <a href="">Іграшки та ігри</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/6.png">
+                                    <div class="assortment__title">
+                                        <a href="">Одежа та взуття</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="categories__items row">
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/7.png">
+                                    <div class="assortment__title">
+                                        <a href="">Для матусь</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/8.png">
+                                    <div class="assortment__title">
+                                        <a href="">Гігієна та догляд</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/9.png">
+                                    <div class="assortment__title">
+                                        <a href="">Годування</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/10.png">
+                                    <div class="assortment__title">
+                                        <a href="">Дитячі подарунки</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/11.png">
+                                    <div class="assortment__title">
+                                        <a href="">Ялинки та іграшки</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="categories__item col-2">
+                                <div class="assortment__item">
+                                    <img class="assortment__img" src="assets/images/categories_assortment/12.png">
+                                    <div class="assortment__title">
+                                        <a href="">Подарункові картки</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section> <!-- /.section --> <!-- /.categories__assortment -->
+        <section class="my__products-carousel">
+            <div class="container">
+                <div class="my__products-block">
+                    <div class="my__products-title">
+                        <h2>Ви дивились раніше</h2>
+                    </div>
+                    <div class="my__products-slide owl-carousel">
+                        <div class="my__products-item item">
+                            <div class="sticker__item">
+                                <img src="assets/images/my_products_carousel/discount.png" alt="Discount">
+                            </div>
+                            <div><i class="item__bi bi bi-heart-fill"></i></div>
+                            <div class="my__products-photo">
+                                <img src="assets/images/my_products_carousel/1.png" alt="">
+                            </div>
+                            <div class="my__products-info">
+                                <div class="info__price">
+                                    <div class="price">1000 €</div>
+                                    <div class="discount">250 €</div>
+                                </div>
+                                <p>Safety 1st Timba Natural Wood 3 в 1 Дитячий шезлонг-гойдалка</p>
+                            </div>
+                        </div>
+                        <div class="my__products-item item">
+                            <div class="sticker__item">
+                                <img src="assets/images/my_products_carousel/hit.png" alt="Hit">
+                            </div>
+                            <div><i class="item__bi bi bi-heart-fill"></i></div>
+                            <div class="my__products-photo">
+                                <img src="assets/images/my_products_carousel/2.png" alt="">
+                            </div>
+                            <div class="my__products-info">
+                                <div class="info__price">
+                                    <div class="price">100 €</div>
+                                </div>
+                                <p>Дитяча іграшка - брязкальце</p>
+                            </div>
+                        </div>
+                        <div class="my__products-item item">
+                            <div><i class="item__bi bi bi-heart-fill"></i></div>
+                            <div class="my__products-photo">
+                                <img src="assets/images/my_products_carousel/3.png" alt="">
+                            </div>
+                            <div class="my__products-info">
+                                <div class="info__price">
+                                    <div class="price">1000 €</div>
+                                </div>
+                                <p>Safety 1st Timba Natural Wood 3 в 1 Дитячий шезлонг-гойдалка</p>
+                            </div>
+                        </div>
+                        <div class="my__products-item item">
+                            <div class="sticker__item">
+                                <img src="assets/images/my_products_carousel/new.png" alt="New">
+                            </div>
+                            <div><i class="item__bi bi bi-heart-fill"></i></div>
+                            <div class="my__products-photo">
+                                <img src="assets/images/my_products_carousel/4.png" alt="">
+                            </div>
+                            <div class="my__products-info">
+                                <div class="info__price">
+                                    <div class="price">100 €</div>
+                                </div>
+                                <p>Пляшечка для годування</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.owl-carousel-->
+                    </div>
+                </div>
+            </div> <!-- /.container -->
+        </section> <!-- /.section --> <!-- /.my__products-carousel -->
+    </main> <!-- /.main -->
+    <hr>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner row">
+                <div class="footer__col footer__col-first col">
+                    <div class="footer__block-contacts col">
+                        <div class="footer__title">Контакти</div>
+                        <div>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="" class="tel"> +38 0989919716</a>
+                        </div>
+                        <div class="social__icon-contact">
+                            <a href="viber://chat?number=%2B380989919716" rel="noopener noreferrer nofollow" target="_blank" data-toggle="tooltip" title="" class="link-viber social-link" data-original-title="Viber">
+                                <i class="fab fa-viber"></i>
+                            </a>
+                            <a href="https://t.me/n_ashchaulova" rel="noopener noreferrer nofollow" target="_blank" data-toggle="tooltip" title="" class="link-telegram social-link" data-original-title="Telegram">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook-messenger" title="Messenger"></i>
+                            </a>
+
+                        </div>
+                        <div>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="" class="email"> Kidsshop@gmail.com</a>
+                        </div>
+                        <div>
+                            <i class="bi bi-clock-fill"></i>
+                            <span>Пн-Пт: 9:00 - 17:00</span>
+                        </div>
+                    </div>
+                </div> <!-- /.footer__col -->
+                <div class="footer__col col">
+                    <div class="col__logo">
+                        <div class="footer__logo">
+                            <img src="assets/images/header/header_logo.png" alt="">
+                        </div>
+                        <div class="footer__social">
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a class="social__item" href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- footer__col -->
+            </div> <!-- /footer__inner -->
+        </div> <!-- /.container -->
+        <div class="copyright">
+            2011-2022 Все права защищены
+        </div>
+    </footer> <!-- /.footer -->
+
+
+    
+<!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!--	Owl Carousel JS-file from CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
